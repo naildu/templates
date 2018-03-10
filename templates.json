@@ -1,12 +1,13 @@
 [
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "Registry",
     "description": "Docker image registry",
     "categories": ["docker"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/registry.png",
-    "image": "lc12:5000/registry:latest",
+    "image": "registry:latest",
     "ports": [
       "5000/tcp"
     ],
@@ -14,12 +15,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "Nginx",
     "description": "High performance web server",
     "categories": ["webserver"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/nginx.png",
-    "image": "lc12:5000/nginx:latest",
+    "image": "nginx:latest",
     "ports": [
       "80/tcp",
       "443/tcp"
@@ -28,12 +30,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "Httpd",
     "description": "Open-source HTTP server",
     "categories": ["webserver"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/httpd.png",
-    "image": "lc12:5000/httpd:latest",
+    "image": "httpd:latest",
     "ports": [
       "80/tcp"
     ],
@@ -41,12 +44,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "Caddy",
     "description": "HTTP/2 web server with automatic HTTPS",
     "categories": ["webserver"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/caddy.png",
-    "image": "lc12:5000/abiosoft/caddy:latest",
+    "image": "abiosoft/caddy:latest",
     "ports": [
       "80/tcp", "443/tcp", "2015/tcp"
     ],
@@ -54,12 +58,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "MySQL",
     "description": "The most popular open-source database",
     "categories": ["database"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/mysql.png",
-    "image": "lc12:5000/mysql:latest",
+    "image": "mysql:latest",
     "env": [
       {
         "name": "MYSQL_ROOT_PASSWORD",
@@ -73,12 +78,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "MariaDB",
     "description": "Performance beyond MySQL",
     "categories": ["database"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/mariadb.png",
-    "image": "lc12:5000/mariadb:latest",
+    "image": "mariadb:latest",
     "env": [
       {
         "name": "MYSQL_ROOT_PASSWORD",
@@ -92,12 +98,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "PostgreSQL",
     "description": "The most advanced open-source database",
     "categories": ["database"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/postgres.png",
-    "image": "lc12:5000/postgres:latest",
+    "image": "postgres:latest",
     "env": [
       {
         "name": "POSTGRES_USER",
@@ -115,12 +122,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "Mongo",
     "description": "Open-source document-oriented database",
     "categories": ["database"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/mongo.png",
-    "image": "lc12:5000/mongo:latest",
+    "image": "mongo:latest",
     "ports": [
       "27017/tcp"
     ],
@@ -128,12 +136,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "CockroachDB",
     "description": "An open-source, survivable, strongly consistent, scale-out SQL database",
     "categories": ["database"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/cockroachdb.png",
-    "image": "lc12:5000/cockroachdb/cockroach:latest",
+    "image": "cockroachdb/cockroach:latest",
     "ports": [
       "26257/tcp",
       "8080/tcp"
@@ -143,12 +152,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "CrateDB",
     "description": "An open-source distributed SQL database",
     "categories": ["database"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/cratedb.png",
-    "image": "lc12:5000/crate:latest",
+    "image": "crate:latest",
     "ports": [
       "4200/tcp",
       "4300/tcp"
@@ -157,12 +167,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "Elasticsearch",
     "description": "Open-source search and analytics engine",
     "categories": ["database"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/elasticsearch.png",
-    "image": "lc12:5000/elasticsearch:latest",
+    "image": "elasticsearch:latest",
     "ports": [
       "9200/tcp",
       "9300/tcp"
@@ -171,13 +182,14 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "Gitlab CE",
     "description": "Open-source end-to-end software development platform",
     "note": "Default username is <b>root</b>. Check the <a href=\"https://docs.gitlab.com/omnibus/docker/README.html#after-starting-a-container\" target=\"_blank\">Gitlab documentation</a> to get started.",
     "categories": ["development", "project-management"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/gitlab_ce.png",
-    "image": "lc12:5000/gitlab/gitlab-ce:latest",
+    "image": "gitlab/gitlab-ce:latest",
     "ports": [
       "80/tcp",
       "443/tcp",
@@ -191,12 +203,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "Minio",
     "description": "A distributed object storage server built for cloud applications and devops",
     "categories": ["storage"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/minio.png",
-    "image": "lc12:5000/minio/minio:latest",
+    "image": "minio/minio:latest",
     "ports": [
       "9000/tcp"
     ],
@@ -215,12 +228,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "Scality S3",
     "description": "Standalone AWS S3 protocol server",
     "categories": ["storage"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/scality-s3.png",
-    "image": "lc12:5000/scality/s3server",
+    "image": "scality/s3server",
     "ports": [
       "8000/tcp"
     ],
@@ -238,13 +252,14 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "SQL Server",
     "description": "Microsoft SQL Server on Linux",
     "categories": ["database"],
     "platform": "linux",
     "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
     "logo": "https://cloudinovasi.id/assets/img/logos/microsoft.png",
-    "image": "lc12:5000/microsoft/mssql-server-linux:2017-GA",
+    "image": "microsoft/mssql-server-linux:2017-GA",
     "ports": [
       "1433/tcp"
     ],
@@ -261,13 +276,14 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "SQL Server",
     "description": "Microsoft SQL Server Developer for Windows containers",
     "categories": ["database"],
     "platform": "windows",
     "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
     "logo": "https://cloudinovasi.id/assets/img/logos/microsoft.png",
-    "image": "lc12:5000/microsoft/mssql-server-windows-developer:latest",
+    "image": "microsoft/mssql-server-windows-developer:latest",
     "ports": [
       "1433/tcp"
     ],
@@ -285,13 +301,14 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "SQL Server Express",
     "description": "Microsoft SQL Server Express for Windows containers",
     "categories": ["database"],
     "platform": "windows",
     "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
     "logo": "https://cloudinovasi.id/assets/img/logos/microsoft.png",
-    "image": "lc12:5000/microsoft/mssql-server-windows-express:latest",
+    "image": "microsoft/mssql-server-windows-express:latest",
     "ports": [
       "1433/tcp"
     ],
@@ -309,12 +326,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "IronFunctions API",
     "description": "Open-source serverless computing platform",
     "categories": ["serverless"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/ironfunctions.png",
-    "image": "lc12:5000/iron/functions:latest",
+    "image": "iron/functions:latest",
     "ports": [
       "8080/tcp"
     ],
@@ -323,12 +341,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "IronFunctions UI",
     "description": "Open-source user interface for IronFunctions",
     "categories": ["serverless"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/ironfunctions.png",
-    "image": "lc12:5000/iron/functions-ui:latest",
+    "image": "iron/functions-ui:latest",
     "ports": [
       "4000/tcp"
     ],
@@ -343,12 +362,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "Solr",
     "description": "Open-source enterprise search platform",
     "categories": ["search-engine"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/solr.png",
-    "image": "lc12:5000/solr:latest",
+    "image": "solr:latest",
     "ports": [
       "8983/tcp"
     ],
@@ -356,12 +376,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "Redis",
     "description": "Open-source in-memory data structure store",
     "categories": ["database"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/redis.png",
-    "image": "lc12:5000/redis:latest",
+    "image": "redis:latest",
     "ports": [
       "6379/tcp"
     ],
@@ -369,12 +390,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "RabbitMQ",
     "description": "Highly reliable enterprise messaging system",
     "categories": ["messaging"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/rabbitmq.png",
-    "image": "lc12:5000/rabbitmq:latest",
+    "image": "rabbitmq:latest",
     "ports": [
       "5671/tcp",
       "5672/tcp"
@@ -383,13 +405,14 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "Ghost",
     "description": "Free and open-source blogging platform",
     "categories": ["blog"],
     "note": "Access the blog management interface under <code>/ghost/</code>.",
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/ghost.png",
-    "image": "lc12:5000/ghost:latest",
+    "image": "ghost:latest",
     "ports": [
       "2368/tcp"
     ],
@@ -397,25 +420,27 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "Plesk",
     "description": "WebOps platform and hosting control panel",
     "categories": ["CMS"],
     "platform": "linux",
     "note": "Default credentials: admin / changeme",
     "logo": "https://cloudinovasi.id/assets/img/logos/plesk.png",
-    "image": "lc12:5000/plesk/plesk:preview",
+    "image": "plesk/plesk:preview",
     "ports": [
       "21/tcp", "80/tcp", "443/tcp", "8880/tcp", "8443/tcp", "8447/tcp"
     ]
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "WordPress",
     "description": "A free and open-source CMS",
     "categories": ["CMS"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/wordpress.png",
-    "image": "lc12:5000/wordpress:latest",
+    "image": "wordpress:latest",
     "env": [
       {
         "name": "WORDPRESS_DB_HOST",
@@ -434,12 +459,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "Joomla",
     "description": "Another free and open-source CMS",
     "categories": ["CMS"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/joomla.png",
-    "image": "lc12:5000/joomla:latest",
+    "image": "joomla:latest",
     "env": [
       {
         "name": "JOOMLA_DB_HOST",
@@ -458,12 +484,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "Drupal",
     "description": "Open-source content management framework",
     "categories": ["CMS"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/drupal.png",
-    "image": "lc12:5000/drupal:latest",
+    "image": "drupal:latest",
     "ports": [
       "80/tcp"
     ],
@@ -471,12 +498,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "Plone",
     "description": "A free and open-source CMS built on top of Zope",
     "categories": ["CMS"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/plone.png",
-    "image": "lc12:5000/plone:latest",
+    "image": "plone:latest",
     "ports": [
       "8080/tcp"
     ],
@@ -484,12 +512,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "Magento 2",
     "description": "Open-source e-commerce platform",
     "categories": ["CMS"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/magento.png",
-    "image": "lc12:5000/alankent/gsd:latest",
+    "image": "alankent/gsd:latest",
     "ports": [
       "80/tcp",
       "3000/tcp",
@@ -499,12 +528,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "Mautic",
     "description": "Open-source marketing automation platform",
     "categories": ["marketing"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/mautic.png",
-    "image": "lc12:5000/mautic/mautic:latest",
+    "image": "mautic/mautic:latest",
     "env": [
       {
         "name": "MAUTIC_DB_HOST",
@@ -523,12 +553,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "Wowza",
     "description": "Streaming media server",
     "categories": ["streaming"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/wowza.png",
-    "image": "lc12:5000/sameersbn/wowza:4.1.2-8",
+    "image": "sameersbn/wowza:4.1.2-8",
     "env": [
       {
         "name": "WOWZA_ACCEPT_LICENSE",
@@ -550,12 +581,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "Jenkins",
     "description": "Open-source continuous integration tool",
     "categories": ["continuous-integration"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/jenkins.png",
-    "image": "lc12:5000/jenkins/jenkins:lts",
+    "image": "jenkins/jenkins:lts",
     "ports": [
       "8080/tcp",
       "50000/tcp"
@@ -570,12 +602,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "Redmine",
     "description": "Open-source project management tool",
     "categories": ["project-management"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/redmine.png",
-    "image": "lc12:5000/redmine:latest",
+    "image": "redmine:latest",
     "ports": [
       "3000/tcp"
     ],
@@ -583,12 +616,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "Odoo",
     "description": "Open-source business apps",
     "categories": ["project-management"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/odoo.png",
-    "image": "lc12:5000/odoo:latest",
+    "image": "odoo:latest",
     "env": [
       {
         "name": "HOST",
@@ -611,13 +645,14 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "Urbackup",
     "description": "Open-source network backup",
     "categories": ["backup"],
     "platform": "linux",
     "note": "This application web interface is exposed on the port 55414 inside the container.",
     "logo": "https://cloudinovasi.id/assets/img/logos/urbackup.png",
-    "image": "lc12:5000/cfstras/urbackup",
+    "image": "cfstras/urbackup",
     "ports": [
       "55413/tcp", "55414/tcp", "55415/tcp", "35622/tcp"
     ],
@@ -625,12 +660,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "CommandBox",
     "description": "ColdFusion (CFML) CLI",
     "categories": ["development"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/ortussolutions-commandbox.png",
-    "image": "lc12:5000/ortussolutions/commandbox:latest",
+    "image": "ortussolutions/commandbox:latest",
     "env": [
       {
         "name": "CFENGINE",
@@ -643,12 +679,13 @@
   },
   {
     "type": "container",
+    "registry": "lc12:5000",
     "title": "ContentBox",
     "description": "Open-source modular CMS",
     "categories": ["CMS"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/ortussolutions-contentbox.png",
-    "image": "lc12:5000/ortussolutions/contentbox:latest",
+    "image": "ortussolutions/contentbox:latest",
     "env": [
       {
         "name": "express",
