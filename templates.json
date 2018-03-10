@@ -6,7 +6,7 @@
     "categories": ["docker"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/registry.png",
-    "image": "registry:latest",
+    "image": "lc12:5000/registry:latest",
     "ports": [
       "5000/tcp"
     ],
@@ -19,7 +19,7 @@
     "categories": ["webserver"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/nginx.png",
-    "image": "nginx:latest",
+    "image": "lc12:5000/nginx:latest",
     "ports": [
       "80/tcp",
       "443/tcp"
@@ -33,7 +33,7 @@
     "categories": ["webserver"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/httpd.png",
-    "image": "httpd:latest",
+    "image": "lc12:5000/httpd:latest",
     "ports": [
       "80/tcp"
     ],
@@ -46,7 +46,7 @@
     "categories": ["webserver"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/caddy.png",
-    "image": "abiosoft/caddy:latest",
+    "image": "lc12:5000/abiosoft/caddy:latest",
     "ports": [
       "80/tcp", "443/tcp", "2015/tcp"
     ],
@@ -59,7 +59,7 @@
     "categories": ["database"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/mysql.png",
-    "image": "mysql:latest",
+    "image": "lc12:5000/mysql:latest",
     "env": [
       {
         "name": "MYSQL_ROOT_PASSWORD",
@@ -78,7 +78,7 @@
     "categories": ["database"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/mariadb.png",
-    "image": "mariadb:latest",
+    "image": "lc12:5000/mariadb:latest",
     "env": [
       {
         "name": "MYSQL_ROOT_PASSWORD",
@@ -97,7 +97,7 @@
     "categories": ["database"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/postgres.png",
-    "image": "postgres:latest",
+    "image": "lc12:5000/postgres:latest",
     "env": [
       {
         "name": "POSTGRES_USER",
@@ -120,7 +120,7 @@
     "categories": ["database"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/mongo.png",
-    "image": "mongo:latest",
+    "image": "lc12:5000/mongo:latest",
     "ports": [
       "27017/tcp"
     ],
@@ -133,7 +133,7 @@
     "categories": ["database"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/cockroachdb.png",
-    "image": "cockroachdb/cockroach:latest",
+    "image": "lc12:5000/cockroachdb/cockroach:latest",
     "ports": [
       "26257/tcp",
       "8080/tcp"
@@ -148,7 +148,7 @@
     "categories": ["database"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/cratedb.png",
-    "image": "crate:latest",
+    "image": "lc12:5000/crate:latest",
     "ports": [
       "4200/tcp",
       "4300/tcp"
@@ -162,7 +162,7 @@
     "categories": ["database"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/elasticsearch.png",
-    "image": "elasticsearch:latest",
+    "image": "lc12:5000/elasticsearch:latest",
     "ports": [
       "9200/tcp",
       "9300/tcp"
@@ -177,7 +177,7 @@
     "categories": ["development", "project-management"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/gitlab_ce.png",
-    "image": "gitlab/gitlab-ce:latest",
+    "image": "lc12:5000/gitlab/gitlab-ce:latest",
     "ports": [
       "80/tcp",
       "443/tcp",
@@ -196,7 +196,7 @@
     "categories": ["storage"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/minio.png",
-    "image": "minio/minio:latest",
+    "image": "lc12:5000/minio/minio:latest",
     "ports": [
       "9000/tcp"
     ],
@@ -220,7 +220,7 @@
     "categories": ["storage"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/scality-s3.png",
-    "image": "scality/s3server",
+    "image": "lc12:5000/scality/s3server",
     "ports": [
       "8000/tcp"
     ],
@@ -244,7 +244,7 @@
     "platform": "linux",
     "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
     "logo": "https://cloudinovasi.id/assets/img/logos/microsoft.png",
-    "image": "microsoft/mssql-server-linux:2017-GA",
+    "image": "lc12:5000/microsoft/mssql-server-linux:2017-GA",
     "ports": [
       "1433/tcp"
     ],
@@ -267,7 +267,7 @@
     "platform": "windows",
     "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
     "logo": "https://cloudinovasi.id/assets/img/logos/microsoft.png",
-    "image": "microsoft/mssql-server-windows-developer:latest",
+    "image": "lc12:5000/microsoft/mssql-server-windows-developer:latest",
     "ports": [
       "1433/tcp"
     ],
@@ -291,7 +291,7 @@
     "platform": "windows",
     "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
     "logo": "https://cloudinovasi.id/assets/img/logos/microsoft.png",
-    "image": "microsoft/mssql-server-windows-express:latest",
+    "image": "lc12:5000/microsoft/mssql-server-windows-express:latest",
     "ports": [
       "1433/tcp"
     ],
@@ -314,7 +314,7 @@
     "categories": ["serverless"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/ironfunctions.png",
-    "image": "iron/functions:latest",
+    "image": "lc12:5000/iron/functions:latest",
     "ports": [
       "8080/tcp"
     ],
@@ -328,7 +328,7 @@
     "categories": ["serverless"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/ironfunctions.png",
-    "image": "iron/functions-ui:latest",
+    "image": "lc12:5000/iron/functions-ui:latest",
     "ports": [
       "4000/tcp"
     ],
@@ -348,7 +348,7 @@
     "categories": ["search-engine"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/solr.png",
-    "image": "solr:latest",
+    "image": "lc12:5000/solr:latest",
     "ports": [
       "8983/tcp"
     ],
@@ -361,7 +361,7 @@
     "categories": ["database"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/redis.png",
-    "image": "redis:latest",
+    "image": "lc12:5000/redis:latest",
     "ports": [
       "6379/tcp"
     ],
@@ -374,7 +374,7 @@
     "categories": ["messaging"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/rabbitmq.png",
-    "image": "rabbitmq:latest",
+    "image": "lc12:5000/rabbitmq:latest",
     "ports": [
       "5671/tcp",
       "5672/tcp"
@@ -389,7 +389,7 @@
     "note": "Access the blog management interface under <code>/ghost/</code>.",
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/ghost.png",
-    "image": "ghost:latest",
+    "image": "lc12:5000/ghost:latest",
     "ports": [
       "2368/tcp"
     ],
@@ -403,7 +403,7 @@
     "platform": "linux",
     "note": "Default credentials: admin / changeme",
     "logo": "https://cloudinovasi.id/assets/img/logos/plesk.png",
-    "image": "plesk/plesk:preview",
+    "image": "lc12:5000/plesk/plesk:preview",
     "ports": [
       "21/tcp", "80/tcp", "443/tcp", "8880/tcp", "8443/tcp", "8447/tcp"
     ]
@@ -415,7 +415,7 @@
     "categories": ["CMS"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/wordpress.png",
-    "image": "wordpress:latest",
+    "image": "lc12:5000/wordpress:latest",
     "env": [
       {
         "name": "WORDPRESS_DB_HOST",
@@ -439,7 +439,7 @@
     "categories": ["CMS"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/joomla.png",
-    "image": "joomla:latest",
+    "image": "lc12:5000/joomla:latest",
     "env": [
       {
         "name": "JOOMLA_DB_HOST",
@@ -463,7 +463,7 @@
     "categories": ["CMS"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/drupal.png",
-    "image": "drupal:latest",
+    "image": "lc12:5000/drupal:latest",
     "ports": [
       "80/tcp"
     ],
@@ -476,7 +476,7 @@
     "categories": ["CMS"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/plone.png",
-    "image": "plone:latest",
+    "image": "lc12:5000/plone:latest",
     "ports": [
       "8080/tcp"
     ],
@@ -489,7 +489,7 @@
     "categories": ["CMS"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/magento.png",
-    "image": "alankent/gsd:latest",
+    "image": "lc12:5000/alankent/gsd:latest",
     "ports": [
       "80/tcp",
       "3000/tcp",
@@ -504,7 +504,7 @@
     "categories": ["marketing"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/mautic.png",
-    "image": "mautic/mautic:latest",
+    "image": "lc12:5000/mautic/mautic:latest",
     "env": [
       {
         "name": "MAUTIC_DB_HOST",
@@ -528,7 +528,7 @@
     "categories": ["streaming"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/wowza.png",
-    "image": "sameersbn/wowza:4.1.2-8",
+    "image": "lc12:5000/sameersbn/wowza:4.1.2-8",
     "env": [
       {
         "name": "WOWZA_ACCEPT_LICENSE",
@@ -555,7 +555,7 @@
     "categories": ["continuous-integration"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/jenkins.png",
-    "image": "jenkins/jenkins:lts",
+    "image": "lc12:5000/jenkins/jenkins:lts",
     "ports": [
       "8080/tcp",
       "50000/tcp"
@@ -575,7 +575,7 @@
     "categories": ["project-management"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/redmine.png",
-    "image": "redmine:latest",
+    "image": "lc12:5000/redmine:latest",
     "ports": [
       "3000/tcp"
     ],
@@ -588,7 +588,7 @@
     "categories": ["project-management"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/odoo.png",
-    "image": "odoo:latest",
+    "image": "lc12:5000/odoo:latest",
     "env": [
       {
         "name": "HOST",
@@ -617,7 +617,7 @@
     "platform": "linux",
     "note": "This application web interface is exposed on the port 55414 inside the container.",
     "logo": "https://cloudinovasi.id/assets/img/logos/urbackup.png",
-    "image": "cfstras/urbackup",
+    "image": "lc12:5000/cfstras/urbackup",
     "ports": [
       "55413/tcp", "55414/tcp", "55415/tcp", "35622/tcp"
     ],
@@ -630,7 +630,7 @@
     "categories": ["development"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/ortussolutions-commandbox.png",
-    "image": "ortussolutions/commandbox:latest",
+    "image": "lc12:5000/ortussolutions/commandbox:latest",
     "env": [
       {
         "name": "CFENGINE",
@@ -648,7 +648,7 @@
     "categories": ["CMS"],
     "platform": "linux",
     "logo": "https://cloudinovasi.id/assets/img/logos/ortussolutions-contentbox.png",
-    "image": "ortussolutions/contentbox:latest",
+    "image": "lc12:5000/ortussolutions/contentbox:latest",
     "env": [
       {
         "name": "express",
